@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ohweaverec-hybridmix"
+version = "0.1.0"
+description = "把两路检索结果按相关度分级，测算不同配比下的排名变化，给出敏感区间"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ohweaverec" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ohweaverec.github.io"
+Repository = "https://github.com/ohweaverec/hybridmix"
+Issues = "https://github.com/ohweaverec/hybridmix/issues"
+
+[project.scripts]
+hybridmix = "hybridmix:main"
+
+[tool.setuptools]
+py-modules = ["hybridmix"]
